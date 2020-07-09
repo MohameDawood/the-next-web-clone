@@ -1,0 +1,22 @@
+{
+  "name": "tnw-clone",
+  "version": "1.0.0",
+  "description": "This page is a clone of a TNW page made for the Milestone [6] project of Microverse &amp; Odin Project.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohameDawood/TNW-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohameDawood/TNW-clone/issues"
+  },
+  "homepage": "https://github.com/MohameDawood/TNW-clone#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

@@ -1,0 +1,116 @@
+.funding {
+  position: relative;
+  padding: 1rem;
+
+  header {
+    margin-bottom: 2.4rem;
+    ul {
+      @include respond('laptop') {
+        display: flex;
+      }
+      li {
+        margin-top: 1.1rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-family: sans-serif;
+
+        &:first-child {
+          padding-top: 1.4rem;
+          @include respond('laptop') {
+            padding: 0;
+          }
+        }
+
+        @include respond('laptop') {
+          &:not(:last-child)::after {
+            content: '|';
+            display: inline-block;
+            color: #f42 ;
+            margin: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__heading {
+    padding: 1.0666666667rem 1.6rem 1.0666666667rem 8.4rem;
+    background-color: #f42;
+    color: #fff;
+  }
+
+  &__header {
+    position: relative;
+  }
+
+  &__img {
+    width: 60px;
+    height: 60px;
+    margin: 10.6666666667px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    @include respond('tablet') {
+      margin: 1.0666666rem;
+    }
+  }
+
+  &__price {
+    &-box {
+      padding: 1.0666666667rem 1.6rem 1.0666666667rem 8.4rem;
+      color: black;
+      background-color: rgba(255, 68, 34, 0.08);
+
+      h5 {
+        color: rgba(#000, 0.5);
+      }
+    }
+  }
+
+  &__tag {
+    &:link,
+    &:visited {
+      display: block;
+      margin-right: 1em;
+      padding-left: 2em;
+      position: relative;
+      font-size: 1.3rem;
+      color: #555;
+      line-height: 22px;
+    }
+
+    &-box {
+      padding: 1.6rem;
+      background-color: rgba(255, 68, 34, 0.03);
+
+      &:last-child {
+        border-top: 1px solid rgba(255, 68, 34, 0.25);
+      }
+    }
+  }
+
+  &__icon {
+    color: black;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 0.2em;
+    left: 0;
+    opacity: 0.9;
+  }
+
+  &__bio {
+    &:link,
+    &:visited {
+      font-family: sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #555555;
+
+      span {
+        color: #aaa;
+      }
+    }
+  }
+}

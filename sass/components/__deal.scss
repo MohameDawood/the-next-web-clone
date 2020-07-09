@@ -1,0 +1,11 @@
+.deal {
+  &__original {
+    text-decoration: line-through;
+  }
+
+  &__iteam {
+    &::after {
+      content: '' !important;
+    }
+  }
+}

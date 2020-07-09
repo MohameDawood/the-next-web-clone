@@ -1,0 +1,77 @@
+.latest {
+  &__img {
+    display: block;
+    position: absolute;
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagrammock-516x270.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 7.5rem;
+    height: 7.5rem;
+    background-size: cover;
+    @include respond('tablet') {
+      position: relative;
+      margin-bottom: 0.8rem;
+      width: 100%;
+      // To Make A Free Distance To Occupy By The Image
+      padding-top: 50%;
+    }
+  }
+
+  &__li {
+    min-height: 72px;
+    &:not(:last-child) {
+      margin: 0.8rem 0 1.6rem;
+    }
+    &:first-child {
+      padding-top: 0;
+    }
+    @include respond('tablet') {
+      display: flex;
+      flex-direction: column;
+      //used important to defeat the problem with the frist child of li
+      padding: 1rem !important;
+      margin: 0 !important;
+    }
+  }
+
+  &__heading--main {
+    margin-bottom: 2.4rem;
+  }
+
+  &__box {
+    padding-left: 8.8rem;
+    @include respond('tablet') {
+      padding-left: 0;
+    }
+  }
+
+  &__heading--second {
+    margin-bottom: 1px;
+    a {
+      &:link,
+      &:visited {
+        color: black;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    padding-top: 0.4rem;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+  }
+
+  &__item:first-child {
+    a:link,
+    a:visited {
+      color: inherit;
+    }
+    &::after {
+      content: '\B7';
+      display: block;
+      float: right;
+      margin: 0 0.4rem;
+    }
+  }
+}

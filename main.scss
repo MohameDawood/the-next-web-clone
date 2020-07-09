@@ -1,0 +1,19 @@
+// Use IBM for nameing Class
+// 7-1 Pattern to Orgainze the code
+
+@import 'sass/utilites/__mixin';
+@import 'sass/utilites/__utilites';
+
+@import 'sass/base/__base';
+@import 'sass/base/__typography';
+
+@import 'sass/components/__nav';
+@import 'sass/components/_slider';
+@import 'sass/components/__hamborger';
+@import 'sass/components/__latest';
+@import 'sass/components/__funding';
+@import 'sass/components/__topic';
+@import 'sass/components/_deal';
+@import 'sass/components/__footer';
+
+@import 'sass/layout/__grid';

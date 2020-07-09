@@ -1,0 +1,37 @@
+.second-heading {
+  color: #ff4422;
+  font-size: 2.35rem;
+  font-weight: 900;
+  letter-spacing: -0.084rem;
+  line-height: 1.1;
+
+  &::after {
+    content: '';
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+    background-size: 16px 16px;
+    display: inline-block;
+    height: 16px;
+    margin-left: 4px;
+    position: relative;
+    top: 0;
+    width: 16px;
+    // Remember The "" in the URL :D
+  }
+}
+
+.third-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.forth-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+
+.fifth-heading {
+  font-size: 1.1rem;
+  font-weight: 500;
+}

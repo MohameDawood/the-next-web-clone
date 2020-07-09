@@ -1,0 +1,29 @@
+.h1-m-b {
+  margin-bottom: 0.7rem;
+}
+
+.topic-m-b {
+  margin-bottom: 1.5rem;
+}
+
+.sheet {
+  padding: 2.8rem 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @include respond('laptop') {
+    max-width: 102.4rem;
+    margin: 0 auto;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.s-m-b {
+  margin-bottom: 5rem;
+}

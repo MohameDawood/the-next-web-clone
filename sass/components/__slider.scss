@@ -1,0 +1,78 @@
+.slider {
+  position: relative;
+  height: 20rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+
+  @include respond('tablet') {
+    width: 35%;
+    height: 50%;
+    float: left;
+    margin-bottom: 0;
+    border: 0.4rem solid transparent;
+
+    &:first-child {
+      width: 65%;
+      height: 100%;
+    }
+  }
+
+  &__section {
+    // used both padding from div and parent
+    // search about the why image break with margin rather than padding
+    padding: 0.8rem;
+    @include respond('tablet') {
+      height: 60vh;
+    }
+  }
+
+  &__img {
+    @include background-image-effect(
+      'https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/shutterstock_530483950-796x485.jpg'
+    );
+    height: 100%;
+    width: 100%;
+  }
+
+  &__header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.4rem 1.2rem;
+  }
+
+  &__heading {
+    &:link,
+    &:visited {
+      color: white;
+      font-weight: 700;
+      font-size: 2rem;
+      // There is a relation between dosplay and line-height?
+      // It dosn't work under 1.1 untill I make display block
+      line-height: 1;
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin-top: 1rem;
+  }
+
+  &__item {
+    &-link {
+      &:link,
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
+
+  &__icon {
+    margin-left: 0.5rem;
+  }
+}

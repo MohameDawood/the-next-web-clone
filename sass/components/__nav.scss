@@ -1,0 +1,90 @@
+.nav {
+  @include clear-fix;
+  height: 4.8rem;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+
+  &__logo-box {
+    display: inline-block;
+    width: 10.6rem;
+    height: inherit;
+    background-image: linear-gradient(to bottom right, #c09, #f42 85%);
+  }
+
+  &__logo-link {
+    height: inherit;
+    padding: 16px 20px;
+    display: block;
+  }
+
+  &__logo {
+    height: 100%;
+  }
+
+  &__list-box {
+    float: right;
+    height: inherit;
+  }
+
+  &__list {
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    //[1:result] So that is why we have to valuate both W and H
+    height: inherit;
+    width: 4.8rem;
+    border-left: 1px solid #eee;
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  &__link {
+    padding: 1.6rem;
+    &--search {
+      //[1:Reason] Note that the parent lost it H * W like float when use absolute positioning
+      @include vh-align;
+      color: #999;
+    }
+  }
+
+  &__list-click {
+    display: none;
+  }
+
+  @include respond('tablet') {
+    &__list-click {
+      display: inline-flex;
+      flex-direction: row;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &__click-item {
+      margin: auto 1rem;
+    }
+
+    &__click {
+      &:link,
+      &:visited {
+        color: #aaaaaa;
+        font-family: sans-serif;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: -1px;
+      }
+    }
+  }
+}

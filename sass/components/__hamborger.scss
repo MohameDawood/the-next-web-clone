@@ -1,0 +1,25 @@
+.hamborger {
+  position: relative;
+  display: inline-block;
+  height: inherit;
+
+  &__ele {
+    display: inline-block;
+    //To on the top of each other, Rather than be be beside each other
+    position: absolute;
+    background-color: #f42;
+    width: 2rem;
+    height: 0.2rem;
+    top: 2.3rem;
+    left: 1.4rem;
+
+    &--top {
+      transform: translateY(-6px);
+    }
+    &--center {
+    }
+    &--bottom {
+      transform: translateY(6px);
+    }
+  }
+}

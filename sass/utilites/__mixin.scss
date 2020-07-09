@@ -1,0 +1,45 @@
+@mixin clear-fix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin vh-align {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// don't forget pass the ($url) as a string
+@mixin background-image-effect($url) {
+  & {
+    position: relative;
+    background-image: linear-gradient(to top, rgba(#000, 0.8) 15%, transparent),
+      url($url);
+    background-size: cover;
+    background-position: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+// Responsive Media Query
+// tablet = 768 px
+// laptop = 1024
+@mixin respond($breakpoint) {
+  @if $breakpoint == 'tablet' {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 'laptop' {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  margin-top: 4.8rem;
+}
+
+body {
+  color: #555;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Avalon, sans-serif;
+}
+
+a {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: #f42;
+  }
+
+  &:hover {
+    color: black;
+  }
+}
+
+ul {
+  list-style: none;
+}

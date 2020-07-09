@@ -1,0 +1,127 @@
+.topic {
+  padding: 1rem;
+
+  &-section {
+    @include respond('tablet') {
+      margin-bottom: 3rem !important;
+    }
+  }
+
+  &:not(:first-child) {
+    margin-top: 2rem;
+    @include respond('tablet') {
+      margin-top: 0;
+    }
+  }
+
+  &__item {
+    display: block;
+  }
+
+  &__article--frist {
+    height: 27.6rem;
+    width: 100%;
+    padding-top: 75%;
+    position: relative;
+  }
+
+  &__article--second {
+    display: flex;
+    width: 100%;
+
+    header {
+      background-color: rgba(255, 68, 34, 0.08);
+      padding: 1rem 1.4rem 0;
+      flex: 1;
+      font-size: 1.4rem;
+
+      h5 {
+        color: #f42;
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+    }
+
+    &__img {
+      display: block;
+      background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/testo.jpg');
+      background-color: #000;
+      background-position: 50%;
+      background-size: cover;
+      height: 96px;
+      width: 96px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    height: 27.6rem;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(#000, 0.8) 15%, transparent),
+      url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-368x276.jpg');
+    background-size: cover;
+    background-position: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__tag {
+    color: white;
+    font-size: 1.3rem;
+  }
+
+  &__header {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.4rem;
+    z-index: 3;
+  }
+
+  &__heading {
+    margin-bottom: 0.6rem;
+
+    a {
+      color: white;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+
+  &__item {
+    &--linear {
+      border-bottom: 1px solid #eee;
+
+      &__heading {
+        color: #555;
+        font-weight: 400;
+        font-size: 1.3rem;
+
+        a {
+          color: inherit;
+          display: block;
+          padding: 6px 0 6px 14px;
+          position: relative;
+
+          &::before {
+            background-color: #f42;
+            border-radius: 50%;
+            content: '';
+            display: block;
+            height: 4px;
+            left: 0;
+            position: absolute;
+            top: 13px;
+            width: 4px;
+          }
+        }
+      }
+    }
+  }
+}
