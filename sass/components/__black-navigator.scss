@@ -11,13 +11,15 @@
     z-index: 1000;
     width: 100%;
     padding-left: 12rem;
-    color: #ff9;
+    color: #fff;
     font-family: sans-serif;
     font-size: 1.3rem;
-    
+
     @include respond("laptop") {
-      padding-left: 2rem;
-    }
+        padding-left: 2rem;
+      }
+    
+    
 
     &__list {
       height: inherit;

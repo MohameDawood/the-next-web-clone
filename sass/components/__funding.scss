@@ -113,4 +113,11 @@
       }
     }
   }
+
+  &__last {
+    display: none;
+    @include respond("laptop") {
+      display: inline-block;
+    }
+  }
 }

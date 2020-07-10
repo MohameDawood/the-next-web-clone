@@ -26,12 +26,13 @@
       position: absolute;
       top: -3.1rem;
     }
-   
+  }
+
+  &__logo-box {   
     @include respond("laptop"){
       display: block;
       position: absolute;
       background-image: none;
-
     }
   }
 
@@ -40,10 +41,6 @@
     padding: 16px 20px;
     display: flex;
     align-items: center;
-
-    @include respond("laptop"){
-    
-    }
   }
 
   &__logo {
@@ -99,7 +96,9 @@
       top: 50%;
       transform: translateY(-50%);
     }
-    
+  }
+
+  &__list-click { 
     @include respond("laptop") {
       padding-left: 2rem;
     }
