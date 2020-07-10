@@ -79,7 +79,7 @@ ul {
 }
 
 .second-heading {
-  color: #ff4422;
+  color: #f42;
   font-size: 2.35rem;
   font-weight: 900;
   letter-spacing: -0.084rem;
@@ -255,7 +255,7 @@ ul {
 }
 
 .nav__click:link, .nav__click:visited {
-  color: #aaaaaa;
+  color: #aaa;
   font-family: sans-serif;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -270,17 +270,18 @@ ul {
   margin-bottom: 0.8rem;
 }
 
-.slider__logo {
-  width: 100%;
-}
-
-.slider__logo-box {
-  z-index: 100;
-  width: 44rem;
-  display: block;
-  position: absolute;
-  top: 5rem;
-  left: 3rem;
+@media (min-width: 1440px) {
+  .slider__logo {
+    width: 100%;
+  }
+  .slider__logo-box {
+    z-index: 100;
+    width: 44rem;
+    display: block;
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -313,7 +314,6 @@ ul {
 }
 
 .slider__img {
-  position: relative;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(15%, rgba(0, 0, 0, 0.8)), to(transparent)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/shutterstock_530483950-796x485.jpg");
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 15%, transparent), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/shutterstock_530483950-796x485.jpg");
   background-size: cover;
@@ -618,10 +618,6 @@ ul {
   }
 }
 
-.topic__item {
-  display: block;
-}
-
 .topic__article--frist {
   height: 27.6rem;
   width: 100%;
@@ -662,7 +658,6 @@ ul {
 }
 
 .topic__img {
-  position: relative;
   height: 27.6rem;
   width: 100%;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(15%, rgba(0, 0, 0, 0.8)), to(transparent)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-368x276.jpg");
@@ -700,6 +695,10 @@ ul {
 .topic__list {
   padding: 0;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.topic__item {
+  display: block;
 }
 
 .topic__item--linear {
@@ -885,7 +884,7 @@ ul {
     z-index: 1000;
     width: 100%;
     padding-left: 12rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: #ff9;
     font-family: sans-serif;
     font-size: 1.3rem;
   }

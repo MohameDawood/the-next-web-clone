@@ -4,17 +4,19 @@
   width: 100%;
   margin-bottom: 0.8rem;
 
-  &__logo {
-    width: 100%;
-    &-box {
-      z-index: 100;
-      width: 44rem;
-      display: block;
-      position: absolute;
-      top: 5rem;
-      left: 3rem;
+  @include respond(laptop) {
+    &__logo {
+      width: 100%;
+
+      &-box {
+        z-index: 100;
+        width: 44rem;
+        display: block;
+        position: absolute;
+        top: 5rem;
+        left: 3rem;
+      }
     }
-    
   }
 
   @include respond('tablet') {
@@ -34,6 +36,7 @@
     // used both padding from div and parent
     // search about the why image break with margin rather than padding
     padding: 0.8rem;
+
     @include respond('tablet') {
       height: 60vh;
     }
@@ -43,6 +46,7 @@
     @include background-image-effect(
       'https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/shutterstock_530483950-796x485.jpg'
     );
+
     height: 100%;
     width: 100%;
   }

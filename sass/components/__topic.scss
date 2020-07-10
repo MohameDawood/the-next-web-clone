@@ -9,13 +9,10 @@
 
   &:not(:first-child) {
     margin-top: 2rem;
+
     @include respond('tablet') {
       margin-top: 0;
     }
-  }
-
-  &__item {
-    display: block;
   }
 
   &__article--frist {
@@ -54,10 +51,10 @@
   }
 
   &__img {
-    position: relative;
     height: 27.6rem;
     width: 100%;
-    background-image: linear-gradient(to top, rgba(#000, 0.8) 15%, transparent),
+    background-image:
+      linear-gradient(to top, rgba(#000, 0.8) 15%, transparent),
       url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-368x276.jpg');
     background-size: cover;
     background-position: 50%;
@@ -95,6 +92,8 @@
   }
 
   &__item {
+    display: block;
+
     &--linear {
       border-bottom: 1px solid #eee;
 

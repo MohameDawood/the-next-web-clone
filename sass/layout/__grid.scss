@@ -6,6 +6,7 @@
 
     .col-m {
       width: 33.33333333%;
+
       @include respond('laptop') {
         width: 25%;
       }
@@ -13,6 +14,7 @@
 
     .col-m--2 {
       width: 50%;
+
       @include respond('laptop') {
         width: 33.333333333%;
       }
@@ -20,6 +22,7 @@
 
     .col-m--3 {
       width: 33.33333%;
+
       @include respond('laptop') {
         width: 25%;
       }
