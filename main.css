@@ -38,7 +38,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
 }
 
@@ -64,7 +64,8 @@ h5 {
   font-family: Avalon, sans-serif;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   color: #f42;
 }
@@ -78,7 +79,7 @@ ul {
 }
 
 .second-heading {
-  color: #ff4422;
+  color: #f42;
   font-size: 2.35rem;
   font-weight: 900;
   letter-spacing: -0.084rem;
@@ -117,7 +118,7 @@ ul {
 .nav {
   height: 4.8rem;
   -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -161,8 +162,8 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .nav__item {
@@ -185,7 +186,7 @@ ul {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #999;
 }
 
@@ -200,12 +201,12 @@ ul {
     display: inline-flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   .nav__click-item {
     margin: auto 1rem;
@@ -275,11 +276,11 @@ ul {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   padding: 1.4rem 1.2rem;
 }
 
@@ -327,12 +328,12 @@ ul {
 
 .hamborger__ele--top {
   -webkit-transform: translateY(-6px);
-          transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 
 .hamborger__ele--bottom {
   -webkit-transform: translateY(6px);
-          transform: translateY(6px);
+  transform: translateY(6px);
 }
 
 .latest__img {
@@ -374,8 +375,8 @@ ul {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 1rem !important;
     margin: 0 !important;
   }
@@ -410,6 +411,25 @@ ul {
   padding-top: 0.4rem;
   font-family: sans-serif;
   font-size: 1.2rem;
+}
+
+.link__item--1 a:link,
+.link__item--1 a:visited {
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.topic__item--linear__heading a {
+  color: inherit;
+  display: block;
+  padding: 6px 0 6px 14px;
+  position: relative;
+}
+
+.topic__heading a {
+  color: white;
 }
 
 .latest__item:first-child a:link,
@@ -535,7 +555,7 @@ ul {
   font-family: sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #555555;
+  color: #555;
 }
 
 .funding__bio:link span, .funding__bio:visited span {
@@ -584,8 +604,8 @@ ul {
   background-color: rgba(255, 68, 34, 0.08);
   padding: 1rem 1.4rem 0;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   font-size: 1.4rem;
 }
 
@@ -606,7 +626,6 @@ ul {
 }
 
 .topic__img {
-  position: relative;
   height: 27.6rem;
   width: 100%;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(15%, rgba(0, 0, 0, 0.8)), to(transparent)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-368x276.jpg");
@@ -637,10 +656,6 @@ ul {
   margin-bottom: 0.6rem;
 }
 
-.topic__heading a {
-  color: white;
-}
-
 .topic__list {
   padding: 0;
   color: rgba(255, 255, 255, 0.6);
@@ -654,13 +669,6 @@ ul {
   color: #555;
   font-weight: 400;
   font-size: 1.3rem;
-}
-
-.topic__item--linear__heading a {
-  color: inherit;
-  display: block;
-  padding: 6px 0 6px 14px;
-  position: relative;
 }
 
 .topic__item--linear__heading a::before {
@@ -696,30 +704,30 @@ ul {
 
 .link__list--1 {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 2.1rem;
 }
 
 @media (min-width: 768px) {
   .link__list--1 {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
 .link__list--2 {
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 @media (min-width: 768px) {
   .link__list--2 {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -736,14 +744,6 @@ ul {
   .link__item--1 {
     margin: 0 0.8rem;
   }
-}
-
-.link__item--1 a:link,
-.link__item--1 a:visited {
-  color: white;
-  text-align: center;
-  font-size: 1.8rem;
-  line-height: 2.2rem;
 }
 
 .link__item--2 {
@@ -766,14 +766,14 @@ ul {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #000;
   color: #aaa;
   font-size: 13px;
@@ -785,8 +785,8 @@ ul {
   .copyright {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
 
@@ -801,7 +801,7 @@ ul {
 }
 
 .copyright__line b {
-  color: #ff4422;
+  color: #f42;
 }
 
 .copyright__logo {
@@ -820,9 +820,10 @@ ul {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: -1rem;
   }
+
   .row .col-m {
     width: 33.33333333%;
   }
