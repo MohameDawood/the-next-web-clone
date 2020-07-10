@@ -4,6 +4,19 @@
   width: 100%;
   margin-bottom: 0.8rem;
 
+  &__logo {
+    width: 100%;
+    &-box {
+      z-index: 100;
+      width: 44rem;
+      display: block;
+      position: absolute;
+      top: 5rem;
+      left: 3rem;
+    }
+    
+  }
+
   @include respond('tablet') {
     width: 35%;
     height: 50%;

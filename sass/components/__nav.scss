@@ -2,28 +2,51 @@
   @include clear-fix;
   height: 4.8rem;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
-  position: fixed;
-  z-index: 100;
+  position: absolute;
+  z-index: 3000;
   width: 100%;
   background-color: white;
   top: 0;
   left: 0;
+
+  @include respond("tablet") {
+    top: 3.1rem;
+  }
 
   &__logo-box {
     display: inline-block;
     width: 10.6rem;
     height: inherit;
     background-image: linear-gradient(to bottom right, #c09, #f42 85%);
+
+    
+    @include respond("tablet") {
+      height: 7.9rem;
+      position: absolute;
+      top: -3.1rem;
+    }
+   
+    @include respond("laptop"){
+      display: block;
+      position: absolute;
+      background-image: none;
+
+    }
   }
 
   &__logo-link {
     height: inherit;
     padding: 16px 20px;
-    display: block;
+    display: flex;
+    align-items: center;
+
+    @include respond("laptop"){
+    
+    }
   }
 
   &__logo {
-    height: 100%;
+    width: 6.6rem;
   }
 
   &__list-box {
@@ -45,7 +68,10 @@
     border-left: 1px solid #eee;
 
     &:last-child {
-      display: none;
+      display: block;
+      @include respond('tablet') {
+        display:none;
+      }
     }
   }
 
@@ -58,17 +84,19 @@
     }
   }
 
-  &__list-click {
-    display: none;
-  }
-
-  @include respond('tablet') {
     &__list-click {
-      display: inline-flex;
-      flex-direction: row;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      display: none;
+      padding-left: 12rem;
+      @include respond("tablet"){
+        display: inline-flex;
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @include respond("laptop"){
+        padding-left: 2rem  ;
+      }
     }
 
     &__click-item {
@@ -85,6 +113,6 @@
         font-weight: 700;
         letter-spacing: -1px;
       }
-    }
+    
   }
 }

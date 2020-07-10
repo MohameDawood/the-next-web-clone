@@ -1,0 +1,57 @@
+.black-navigator {
+  display: none;
+  
+  @include respond('tablet') {
+    display: block;
+    background-color: black;
+    height: 3.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    padding-left: 12rem;
+    color: hsla(0,0%,100%,.6);
+    font-family: sans-serif;
+    font-size: 1.3rem;
+
+    @include respond("laptop") {
+      padding-left: 2rem;
+    }
+
+    &__list {
+      height: inherit;
+      display: flex;
+      align-items: center;
+
+        &--1 {
+          float: left;
+        }
+
+        &--2 {
+          float: right;
+          padding-right: 2rem;
+        }
+    }
+
+    &__item {
+      margin-left: 1.2rem ;
+    }
+
+    &__link {
+      &:link,
+      &:visited{
+        color:inherit
+      }
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    &__down {
+      @include down;
+    }
+
+  }
+}

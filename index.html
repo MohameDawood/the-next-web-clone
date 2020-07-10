@@ -1,1591 +1,1539 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <title>TNW</title>
-    <script
-      src="https://kit.fontawesome.com/63c1245c39.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Navigator -->
-    <nav class="nav nav-m-b">
-      <!-- Logo -->
-      <div class="nav__logo-box">
-        <a href="#" class="nav__logo-link">
-          <img
-            src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"
-            alt="TNW Logo"
-            class="nav__logo"
-          />
-        </a>
-      </div>
 
-      <ul class="nav__list-click">
-        <li class="nav__click-item">
-          <a href="#" class="nav__click">Latest</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <title>TNW</title>
+  <script src="https://kit.fontawesome.com/63c1245c39.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="black-navigator">
+    <ul class="black-navigator__list black-navigator__list--1">
+      <li class="black-navigator__item"><a class="black-navigator__link" href="#">News</a></li>
+      <li class="black-navigator__item"><a class="black-navigator__link black-navigator__down" href="#">Events</a></li>
+      <li class="black-navigator__item"><a class="black-navigator__link black-navigator__down" href="#">Business</a>
+      </li>
+      <li class="black-navigator__item"><a class="black-navigator__link" href="#">AMAs</a></li>
+      <li class="black-navigator__item"><a class="black-navigator__link" href="#">Space</a></li>
+      <li class="black-navigator__item"><a class="black-navigator__link" href="#">Terms & Conditions</a></li>
+    </ul>
+    <ul class="black-navigator__list black-navigator__list--2">
+      <li class="black-navigator__item"><a class="black-navigator__link" href="#">About</a></li>
+      <li class="black-navigator__item"><a class="black-navigator__link" href="#">Advertise</a></li>
+      <li class="black-navigator__item"><a class="black-navigator__link" href="#">Jobs</a></li>
+      <li class="black-navigator__item"><a class="black-navigator__link" href="#">Contact</a></li>
+
+    </ul>
+  </div>
+  <!-- Navigator -->
+  <nav class="nav nav-m-b">
+    <!-- Logo -->
+    <div class="nav__logo-box">
+      <a href="#" class="nav__logo-link">
+        <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" alt="TNW Logo"
+          class="nav__logo" />
+      </a>
+    </div>
+
+    <ul class="nav__list-click">
+      <li class="nav__click-item">
+        <a href="#" class="nav__click">Latest</a>
+      </li>
+      <li class="nav__click-item">
+        <a href="#" class="nav__click">Hard Fork</a>
+      </li>
+      <li class="nav__click-item">
+        <a href="#" class="nav__click">Plugged</a>
+      </li>
+      <li class="nav__click-item">
+        <a href="#" class="nav__click">Readme</a>
+      </li>
+      <li class="nav__click-item">
+        <a href="#" class="nav__click">Growth Quarters</a>
+      </li>
+    </ul>
+
+    <!-- Navigator List Options-->
+    <div class="nav__list-box">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--search">
+            <i class="fas fa-search"></i>
+          </a>
         </li>
-        <li class="nav__click-item">
-          <a href="#" class="nav__click">Hard Fork</a>
-        </li>
-        <li class="nav__click-item">
-          <a href="#" class="nav__click">Plugged</a>
-        </li>
-        <li class="nav__click-item">
-          <a href="#" class="nav__click">Readme</a>
-        </li>
-        <li class="nav__click-item">
-          <a href="#" class="nav__click">Growth Quarters</a>
+        <!-- Hamborger Icon :D -->
+        <li class="nav__item">
+          <a class="nav__icon hamborger">
+            <span class="hamborger__ele hamborger__ele--top"></span>
+            <span class="hamborger__ele hamborger__ele--center"></span>
+            <span class="hamborger__ele hamborger__ele--bottom"></span>
+          </a>
         </li>
       </ul>
+    </div>
+  </nav>
 
-      <!-- Navigator List Options-->
-      <div class="nav__list-box">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link nav__link--search">
-              <i class="fas fa-search"></i>
-            </a>
+  <!-- Main Conetent -->
+  <main>
+    <div class="slider__section">
+      <!-- Start The slider Block -->
+      <article class="slider">
+        <div class="slider__logo-box">
+          <img class="slider__logo" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"
+            alt="LOgo">
+        </div>
+        <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
+        <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
+        <div class="slider__img">
+          <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
+          <header class="slider__header">
+            <h2>
+              <a class="slider__heading" href="#">5 reasons why Germany is the best country for startups</a>
+            </h2>
+            <ul class="slider__list">
+              <li class="slider__item">
+                by <a class="slider__item-link" href="#">Callum Booth</a>
+              </li>
+              <li class="slider__item">
+                <i class="slider__icon far fa-clock"></i><span class="timeago"> 1 hour ago</span>
+              </li>
+              <li class="slider__item">
+                <i class="slider__icon fas fa-share-alt"></i> 3
+              </li>
+            </ul>
+          </header>
+        </div>
+      </article>
+      <!-- End The slider Block -->
+
+      <!-- Start The slider Block -->
+      <article class="slider">
+        <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
+        <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
+        <div class="slider__img">
+          <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
+          <header class="slider__header">
+            <h2>
+              <a class="slider__heading" href="#">5 reasons why Germany is the best country for startups</a>
+            </h2>
+            <ul class="slider__list">
+              <li class="slider__item">
+                by <a class="slider__item-link" href="#">Callum Booth</a>
+              </li>
+              <li class="slider__item">
+                <i class="slider__icon far fa-clock"></i><span class="timeago"> 1 hour ago</span>
+              </li>
+              <li class="slider__item">
+                <i class="slider__icon fas fa-share-alt"></i> 3
+              </li>
+            </ul>
+          </header>
+        </div>
+      </article>
+      <!-- End The slider Block -->
+
+      <!-- Start The slider Block -->
+      <article class="slider">
+        <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
+        <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
+        <div class="slider__img">
+          <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
+          <header class="slider__header">
+            <h2>
+              <a class="slider__heading" href="#">5 reasons why Germany is the best country for startups</a>
+            </h2>
+            <ul class="slider__list">
+              <li class="slider__item">
+                by <a class="slider__item-link" href="#">Callum Booth</a>
+              </li>
+              <li class="slider__item">
+                <i class="slider__icon far fa-clock"></i><span class="timeago"> 1 hour ago</span>
+              </li>
+              <li class="slider__item">
+                <i class="slider__icon fas fa-share-alt"></i> 3
+              </li>
+            </ul>
+          </header>
+        </div>
+      </article>
+      <!-- End The slider Block -->
+    </div>
+
+    <div class="sheet">
+      <div class="wrapper">
+        <!-- Latest News Section -->
+        <section class="latest s-m-b">
+          <!-- Latest News Heading -->
+          <h2 class="latest__heading--main second-heading">Latest news</h2>
+          <ul class="row">
+            <!-- Start Latest News Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item"><a href="#">Ivan</a></li>
+                  <li class="latest__item">
+                    <!-- !! -->
+                    <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                      1 hour ago
+                    </time>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest News Artile Block -->
+
+            <!-- Start Latest News Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item"><a href="#">Ivan</a></li>
+                  <li class="latest__item">
+                    <!-- !! -->
+                    <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                      1 hour ago
+                    </time>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest News Artile Block -->
+
+            <!-- Start Latest News Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item"><a href="#">Ivan</a></li>
+                  <li class="latest__item">
+                    <!-- !! -->
+                    <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                      1 hour ago
+                    </time>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest News Artile Block -->
+
+            <!-- Start Latest News Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item"><a href="#">Ivan</a></li>
+                  <li class="latest__item">
+                    <!-- !! -->
+                    <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                      1 hour ago
+                    </time>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest News Artile Block -->
+
+            <!-- Start Latest News Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item"><a href="#">Ivan</a></li>
+                  <li class="latest__item">
+                    <!-- !! -->
+                    <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                      1 hour ago
+                    </time>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest News Artile Block -->
+
+            <!-- Start Latest News Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item"><a href="#">Ivan</a></li>
+                  <li class="latest__item">
+                    <!-- !! -->
+                    <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                      1 hour ago
+                    </time>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest News Artile Block -->
+
+            <!-- Start Latest News Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item"><a href="#">Ivan</a></li>
+                  <li class="latest__item">
+                    <!-- !! -->
+                    <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                      1 hour ago
+                    </time>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest News Artile Block -->
+
+            <!-- Start Latest News Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item"><a href="#">Ivan</a></li>
+                  <li class="latest__item">
+                    <!-- !! -->
+                    <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                      1 hour ago
+                    </time>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest News Artile Block -->
+          </ul>
+        </section>
+        <!-- End The Latest News Section -->
+
+        <!-- Start The Funding Section -->
+        <section class="funding s-m-b">
+          <!-- Funding Section Header -->
+          <header>
+            <h2 class="funding__heading--main second-heading">
+              Latest funding rounds on Index.co
+            </h2>
+            <ul>
+              <li><a href="#">See more</a></li>
+              <li><a href="#">Get update by mail</a></li>
+              <li><a href="#">Add info</a></li>
+            </ul>
+          </header>
+
+          <ul class="row">
+            <!-- Start Funding Block -->
+            <li class="funding col-m--3">
+              <!-- The funding block header of the section -->
+              <a href="#" class="funding__header">
+                <img class="funding__img"
+                  src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1280551752593338368%2FAf17dIYK.jpg&signature=d7c37d4f7cda5a5296512fa28f5d94f7"
+                  alt="company logo" />
+                <h4 class="funding__heading forth-heading">Truepill</h4>
+                <div class="funding__price-box">
+                  <h4>$25M</h4>
+                  <h5 class="fifth-heading">Series B</h5>
+                </div>
+              </a>
+              <!-- The funding block Tag -->
+              <div class="funding__tag-box">
+                <a href="#" class="funding__tag">
+                  <i class="funding__icon fas fa-tag"></i>
+                  <span>Health Care</span>
+                </a>
+              </div>
+              <!-- The funding block Bio -->
+              <div class="funding__tag-box">
+                <a class="funding__bio" href="#">
+                  RacketPal raises £150k in pre-seed round
+                  <span>on&nbsp;UKTN (UK Tech News)</span>
+                </a>
+              </div>
+            </li>
+            <!-- End Funding Block -->
+
+            <!-- Start Funding Block -->
+            <li class="funding col-m--3">
+              <!-- The funding block header of the section -->
+              <a href="#" class="funding__header">
+                <img class="funding__img"
+                  src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1280551752593338368%2FAf17dIYK.jpg&signature=d7c37d4f7cda5a5296512fa28f5d94f7"
+                  alt="company logo" />
+                <h4 class="funding__heading forth-heading">Truepill</h4>
+                <div class="funding__price-box">
+                  <h4>$25M</h4>
+                  <h5 class="fifth-heading">Series B</h5>
+                </div>
+              </a>
+              <!-- The funding block Tag -->
+              <div class="funding__tag-box">
+                <a href="#" class="funding__tag">
+                  <i class="funding__icon fas fa-tag"></i>
+                  <span>Health Care</span>
+                </a>
+              </div>
+              <!-- The funding block Bio -->
+              <div class="funding__tag-box">
+                <a class="funding__bio" href="#">
+                  RacketPal raises £150k in pre-seed round
+                  <span>on&nbsp;UKTN (UK Tech News)</span>
+                </a>
+              </div>
+            </li>
+            <!-- End Funding Block -->
+
+            <!-- Start Funding Block -->
+            <li class="funding col-m--3">
+              <!-- The funding block header of the section -->
+              <a href="#" class="funding__header">
+                <img class="funding__img"
+                  src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1280551752593338368%2FAf17dIYK.jpg&signature=d7c37d4f7cda5a5296512fa28f5d94f7"
+                  alt="company logo" />
+                <h4 class="funding__heading forth-heading">Truepill</h4>
+                <div class="funding__price-box">
+                  <h4>$25M</h4>
+                  <h5 class="fifth-heading">Series B</h5>
+                </div>
+              </a>
+              <!-- The funding block Tag -->
+              <div class="funding__tag-box">
+                <a href="#" class="funding__tag">
+                  <i class="funding__icon fas fa-tag"></i>
+                  <span>Health Care</span>
+                </a>
+              </div>
+              <!-- The funding block Bio -->
+              <div class="funding__tag-box">
+                <a class="funding__bio" href="#">
+                  RacketPal raises £150k in pre-seed round
+                  <span>on&nbsp;UKTN (UK Tech News)</span>
+                </a>
+              </div>
+            </li>
+            <!-- End Funding Block -->
+          </ul>
+        </section>
+        <!-- End The funding Section -->
+
+        <div class="topic-section s-m-b row">
+          <!-- Start The topic Section -->
+          <section class="topic col-m--2">
+            <!-- Topic Heading -->
+            <h2 class="topic__heading--main second-heading topic-m-b">
+              <a href="#">Hard Fork</a>
+            </h2>
+            <ul class="topic__list">
+              <li class="topic__item">
+                <article class="topic__article--frist">
+                  <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
+                  <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
+                  <div class="topic__img">
+                    <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
+
+                    <header class="topic__header">
+                      <h5 class="topic__tag fifth-heading">Most popular</h5>
+                      <h3 class="topic__heading third-heading">
+                        <a href="#">
+                          Satoshi Nakaboto: ‘Leaked data shows how the FBI
+                          uncovers Bitcoin laundering’
+                        </a>
+                      </h3>
+                      <ul class="topic__list latest__list">
+                        <li class="topic__item latest__item">
+                          <a href="#">Ivan</a>
+                        </li>
+                        <li class="topic__item latest__item">
+                          <!-- !! -->
+                          <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                            1 hour ago
+                          </time>
+                        </li>
+                      </ul>
+                    </header>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="topic__article--second">
+                  <header>
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href="#">Digital media giant J2 Global 'targeted'</a>
+                    </h4>
+                  </header>
+                  <a class="topic__article--second__img" href="#"></a>
+                </article>
+              </li>
+
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+            </ul>
+          </section>
+          <!-- End The topic Section -->
+
+          <!-- Start The topic Section -->
+          <section class="topic col-m--2">
+            <!-- Topic Heading -->
+            <h2 class="topic__heading--main second-heading topic-m-b">
+              <a href="#">Hard Fork</a>
+            </h2>
+            <ul class="topic__list">
+              <li class="topic__item">
+                <article class="topic__article--frist">
+                  <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
+                  <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
+                  <div class="topic__img">
+                    <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
+
+                    <header class="topic__header">
+                      <h5 class="topic__tag fifth-heading">Most popular</h5>
+                      <h3 class="topic__heading third-heading">
+                        <a href="#">
+                          Satoshi Nakaboto: ‘Leaked data shows how the FBI
+                          uncovers Bitcoin laundering’
+                        </a>
+                      </h3>
+                      <ul class="topic__list latest__list">
+                        <li class="topic__item latest__item">
+                          <a href="#">Ivan</a>
+                        </li>
+                        <li class="topic__item latest__item">
+                          <!-- !! -->
+                          <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                            1 hour ago
+                          </time>
+                        </li>
+                      </ul>
+                    </header>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="topic__article--second">
+                  <header>
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href="#">Digital media giant J2 Global 'targeted'</a>
+                    </h4>
+                  </header>
+                  <a class="topic__article--second__img" href="#"></a>
+                </article>
+              </li>
+
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+            </ul>
+          </section>
+          <!-- End The topic Section -->
+
+          <!-- Start The topic Section -->
+          <section class="topic col-m--2">
+            <!-- Topic Heading -->
+            <h2 class="topic__heading--main second-heading topic-m-b">
+              <a href="#">Hard Fork</a>
+            </h2>
+            <ul class="topic__list">
+              <li class="topic__item">
+                <article class="topic__article--frist">
+                  <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
+                  <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
+                  <div class="topic__img">
+                    <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
+
+                    <header class="topic__header">
+                      <h5 class="topic__tag fifth-heading">Most popular</h5>
+                      <h3 class="topic__heading third-heading">
+                        <a href="#">
+                          Satoshi Nakaboto: ‘Leaked data shows how the FBI
+                          uncovers Bitcoin laundering’
+                        </a>
+                      </h3>
+                      <ul class="topic__list latest__list">
+                        <li class="topic__item latest__item">
+                          <a href="#">Ivan</a>
+                        </li>
+                        <li class="topic__item latest__item">
+                          <!-- !! -->
+                          <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                            1 hour ago
+                          </time>
+                        </li>
+                      </ul>
+                    </header>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="topic__article--second">
+                  <header>
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href="#">Digital media giant J2 Global 'targeted'</a>
+                    </h4>
+                  </header>
+                  <a class="topic__article--second__img" href="#"></a>
+                </article>
+              </li>
+
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+            </ul>
+          </section>
+          <!-- End The topic Section -->
+
+          <!-- Start The topic Section -->
+          <section class="topic col-m--2">
+            <!-- Topic Heading -->
+            <h2 class="topic__heading--main second-heading topic-m-b">
+              <a href="#">Hard Fork</a>
+            </h2>
+            <ul class="topic__list">
+              <li class="topic__item">
+                <article class="topic__article--frist">
+                  <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
+                  <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
+                  <div class="topic__img">
+                    <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
+
+                    <header class="topic__header">
+                      <h5 class="topic__tag fifth-heading">Most popular</h5>
+                      <h3 class="topic__heading third-heading">
+                        <a href="#">
+                          Satoshi Nakaboto: ‘Leaked data shows how the FBI
+                          uncovers Bitcoin laundering’
+                        </a>
+                      </h3>
+                      <ul class="topic__list latest__list">
+                        <li class="topic__item latest__item">
+                          <a href="#">Ivan</a>
+                        </li>
+                        <li class="topic__item latest__item">
+                          <!-- !! -->
+                          <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                            1 hour ago
+                          </time>
+                        </li>
+                      </ul>
+                    </header>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="topic__article--second">
+                  <header>
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href="#">Digital media giant J2 Global 'targeted'</a>
+                    </h4>
+                  </header>
+                  <a class="topic__article--second__img" href="#"></a>
+                </article>
+              </li>
+
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+            </ul>
+          </section>
+          <!-- End The topic Section -->
+
+          <!-- Start The topic Section -->
+          <section class="topic col-m--2">
+            <!-- Topic Heading -->
+            <h2 class="topic__heading--main second-heading topic-m-b">
+              <a href="#">Hard Fork</a>
+            </h2>
+            <ul class="topic__list">
+              <li class="topic__item">
+                <article class="topic__article--frist">
+                  <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
+                  <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
+                  <div class="topic__img">
+                    <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
+
+                    <header class="topic__header">
+                      <h5 class="topic__tag fifth-heading">Most popular</h5>
+                      <h3 class="topic__heading third-heading">
+                        <a href="#">
+                          Satoshi Nakaboto: ‘Leaked data shows how the FBI
+                          uncovers Bitcoin laundering’
+                        </a>
+                      </h3>
+                      <ul class="topic__list latest__list">
+                        <li class="topic__item latest__item">
+                          <a href="#">Ivan</a>
+                        </li>
+                        <li class="topic__item latest__item">
+                          <!-- !! -->
+                          <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                            1 hour ago
+                          </time>
+                        </li>
+                      </ul>
+                    </header>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="topic__article--second">
+                  <header>
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href="#">Digital media giant J2 Global 'targeted'</a>
+                    </h4>
+                  </header>
+                  <a class="topic__article--second__img" href="#"></a>
+                </article>
+              </li>
+
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+            </ul>
+          </section>
+          <!-- End The topic Section -->
+
+          <!-- Start The topic Section -->
+          <section class="topic col-m--2">
+            <!-- Topic Heading -->
+            <h2 class="topic__heading--main second-heading topic-m-b">
+              <a href="#">Hard Fork</a>
+            </h2>
+            <ul class="topic__list">
+              <li class="topic__item">
+                <article class="topic__article--frist">
+                  <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
+                  <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
+                  <div class="topic__img">
+                    <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
+
+                    <header class="topic__header">
+                      <h5 class="topic__tag fifth-heading">Most popular</h5>
+                      <h3 class="topic__heading third-heading">
+                        <a href="#">
+                          Satoshi Nakaboto: ‘Leaked data shows how the FBI
+                          uncovers Bitcoin laundering’
+                        </a>
+                      </h3>
+                      <ul class="topic__list latest__list">
+                        <li class="topic__item latest__item">
+                          <a href="#">Ivan</a>
+                        </li>
+                        <li class="topic__item latest__item">
+                          <!-- !! -->
+                          <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                            1 hour ago
+                          </time>
+                        </li>
+                      </ul>
+                    </header>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="topic__article--second">
+                  <header>
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href="#">Digital media giant J2 Global 'targeted'</a>
+                    </h4>
+                  </header>
+                  <a class="topic__article--second__img" href="#"></a>
+                </article>
+              </li>
+
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+            </ul>
+          </section>
+          <!-- End The topic Section -->
+
+          <!-- Start The topic Section -->
+          <section class="topic col-m--2">
+            <!-- Topic Heading -->
+            <h2 class="topic__heading--main second-heading topic-m-b">
+              <a href="#">Hard Fork</a>
+            </h2>
+            <ul class="topic__list">
+              <li class="topic__item">
+                <article class="topic__article--frist">
+                  <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
+                  <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
+                  <div class="topic__img">
+                    <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
+
+                    <header class="topic__header">
+                      <h5 class="topic__tag fifth-heading">Most popular</h5>
+                      <h3 class="topic__heading third-heading">
+                        <a href="#">
+                          Satoshi Nakaboto: ‘Leaked data shows how the FBI
+                          uncovers Bitcoin laundering’
+                        </a>
+                      </h3>
+                      <ul class="topic__list latest__list">
+                        <li class="topic__item latest__item">
+                          <a href="#">Ivan</a>
+                        </li>
+                        <li class="topic__item latest__item">
+                          <!-- !! -->
+                          <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                            1 hour ago
+                          </time>
+                        </li>
+                      </ul>
+                    </header>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="topic__article--second">
+                  <header>
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href="#">Digital media giant J2 Global 'targeted'</a>
+                    </h4>
+                  </header>
+                  <a class="topic__article--second__img" href="#"></a>
+                </article>
+              </li>
+
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+            </ul>
+          </section>
+          <!-- End The topic Section -->
+
+          <!-- Start The topic Section -->
+          <section class="topic col-m--2">
+            <!-- Topic Heading -->
+            <h2 class="topic__heading--main second-heading topic-m-b">
+              <a href="#">Hard Fork</a>
+            </h2>
+            <ul class="topic__list">
+              <li class="topic__item">
+                <article class="topic__article--frist">
+                  <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
+                  <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
+                  <div class="topic__img">
+                    <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
+
+                    <header class="topic__header">
+                      <h5 class="topic__tag fifth-heading">Most popular</h5>
+                      <h3 class="topic__heading third-heading">
+                        <a href="#">
+                          Satoshi Nakaboto: ‘Leaked data shows how the FBI
+                          uncovers Bitcoin laundering’
+                        </a>
+                      </h3>
+                      <ul class="topic__list latest__list">
+                        <li class="topic__item latest__item">
+                          <a href="#">Ivan</a>
+                        </li>
+                        <li class="topic__item latest__item">
+                          <!-- !! -->
+                          <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                            1 hour ago
+                          </time>
+                        </li>
+                      </ul>
+                    </header>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="topic__article--second">
+                  <header>
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href="#">Digital media giant J2 Global 'targeted'</a>
+                    </h4>
+                  </header>
+                  <a class="topic__article--second__img" href="#"></a>
+                </article>
+              </li>
+
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+            </ul>
+          </section>
+          <!-- End The topic Section -->
+
+          <!-- Start The topic Section -->
+          <section class="topic col-m--2">
+            <!-- Topic Heading -->
+            <h2 class="topic__heading--main second-heading topic-m-b">
+              <a href="#">Hard Fork</a>
+            </h2>
+            <ul class="topic__list">
+              <li class="topic__item">
+                <article class="topic__article--frist">
+                  <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
+                  <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
+                  <div class="topic__img">
+                    <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
+
+                    <header class="topic__header">
+                      <h5 class="topic__tag fifth-heading">Most popular</h5>
+                      <h3 class="topic__heading third-heading">
+                        <a href="#">
+                          Satoshi Nakaboto: ‘Leaked data shows how the FBI
+                          uncovers Bitcoin laundering’
+                        </a>
+                      </h3>
+                      <ul class="topic__list latest__list">
+                        <li class="topic__item latest__item">
+                          <a href="#">Ivan</a>
+                        </li>
+                        <li class="topic__item latest__item">
+                          <!-- !! -->
+                          <time datetime="2020-07-08T17:29:19+00:00" data-full-date="Julc8, 2020 - 19:29">
+                            1 hour ago
+                          </time>
+                        </li>
+                      </ul>
+                    </header>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="topic__article--second">
+                  <header>
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href="#">Digital media giant J2 Global 'targeted'</a>
+                    </h4>
+                  </header>
+                  <a class="topic__article--second__img" href="#"></a>
+                </article>
+              </li>
+
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+              <li class="topic__item--linear">
+                <h4 class="topic__item--linear__heading">
+                  <a href="#">
+                    Satoshi Nakaboto: ‘New app lets you send and receive
+                    Bitcoin directly from and to your bank account’
+                  </a>
+                </h4>
+              </li>
+            </ul>
+          </section>
+          <!-- End The topic Section -->
+        </div>
+
+        <!-- Start of Latest Deal Section -->
+        <section class="latest Deal s-m-b">
+          <!-- Latest Deal Heading -->
+          <h2 class="latest__heading--main second-heading">Latest deals</h2>
+          <ul class="row">
+            <!-- Start Latest Deal Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item deal__iteam">
+                    <span class="deal__original">$49.99</span>
+                  </li>
+                  <li class="latest__item deal__iteam"><span>$0</span></li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest Deal Artile Block -->
+
+            <!-- Start Latest Deal Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item deal__iteam">
+                    <span class="deal__original">$49.99</span>
+                  </li>
+                  <li class="latest__item deal__iteam"><span>$0</span></li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest Deal Artile Block -->
+
+            <!-- Start Latest Deal Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item deal__iteam">
+                    <span class="deal__original">$49.99</span>
+                  </li>
+                  <li class="latest__item deal__iteam"><span>$0</span></li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest Deal Artile Block -->
+
+            <!-- Start Latest Deal Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item deal__iteam">
+                    <span class="deal__original">$49.99</span>
+                  </li>
+                  <li class="latest__item deal__iteam"><span>$0</span></li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest Deal Artile Block -->
+
+            <!-- Start Latest Deal Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item deal__iteam">
+                    <span class="deal__original">$49.99</span>
+                  </li>
+                  <li class="latest__item deal__iteam"><span>$0</span></li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest Deal Artile Block -->
+
+            <!-- Start Latest Deal Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item deal__iteam">
+                    <span class="deal__original">$49.99</span>
+                  </li>
+                  <li class="latest__item deal__iteam"><span>$0</span></li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest Deal Artile Block -->
+
+            <!-- Start Latest Deal Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item deal__iteam">
+                    <span class="deal__original">$49.99</span>
+                  </li>
+                  <li class="latest__item deal__iteam"><span>$0</span></li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest Deal Artile Block -->
+
+            <!-- Start Latest Deal Artile Block -->
+            <li class="col-m latest__li">
+              <a href="#" class="latest__img"></a>
+              <div class="latest__box">
+                <h4 class="latest__heading--second forth-heading">
+                  <a href="#">
+                    Instagram now lets you pin 3 comments on your posts -
+                    here's how
+                  </a>
+                </h4>
+                <ul class="latest__list">
+                  <li class="latest__item deal__iteam">
+                    <span class="deal__original">$49.99</span>
+                  </li>
+                  <li class="latest__item deal__iteam"><span>$0</span></li>
+                </ul>
+              </div>
+            </li>
+            <!-- End Latest Deal Artile Block -->
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Start Footer -->
+  <footer class="footer">
+    <div class="link-box">
+      <!-- This Wrapper Act Like A Container With Padding For All Its Contents-->
+      <div class="wrapper">
+        <!-- Start The List Of Icons -->
+        <ul class="link__list link__list--1">
+          <li class="link__item--1">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
           </li>
-          <!-- Hamborger Icon :D -->
-          <li class="nav__item">
-            <a class="nav__icon hamborger">
-              <span class="hamborger__ele hamborger__ele--top"></span>
-              <span class="hamborger__ele hamborger__ele--center"></span>
-              <span class="hamborger__ele hamborger__ele--bottom"></span>
-            </a>
+          <li class="link__item--1">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="link__item--1">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+          <li class="link__item--1">
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+          </li>
+          <li class="link__item--1">
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </li>
+          <li class="link__item--1">
+            <a href="#"><i class="fas fa-rss"></i></a>
+          </li>
+          <li class="link__item--1">
+            <a href="#"><i class="fas fa-envelope"></i></a>
           </li>
         </ul>
+        <!-- End The List Of Icons -->
+        <!-- Start The List Of Links -->
+        <ul class="link__list link__list--2">
+          <li class="link__item--2">Events</li>
+          <li class="link__item--2">About</li>
+          <li class="link__item--2">Advertise</li>
+          <li class="link__item--2">Jobs</li>
+          <li class="link__item--2">Contact</li>
+        </ul>
+        <!-- End The List Of Links -->
       </div>
-    </nav>
+    </div>
 
-    <!-- Main Conetent -->
-    <main>
-      <div class="slider__section">
-        <!-- Start The slider Block -->
-        <article class="slider">
-          <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
-          <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
-          <div class="slider__img">
-            <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
-            <header class="slider__header">
-              <h2>
-                <a class="slider__heading" href="#"
-                  >5 reasons why Germany is the best country for startups</a
-                >
-              </h2>
-              <ul class="slider__list">
-                <li class="slider__item">
-                  by <a class="slider__item-link" href="#">Callum Booth</a>
-                </li>
-                <li class="slider__item">
-                  <i class="slider__icon far fa-clock"></i
-                  ><span class="timeago"> 1 hour ago</span>
-                </li>
-                <li class="slider__item">
-                  <i class="slider__icon fas fa-share-alt"></i> 3
-                </li>
-              </ul>
-            </header>
-          </div>
-        </article>
-        <!-- End The slider Block -->
+    <div class="copyright">
+      <span class="copyright__line">
+        <a href="#">
+          <img class="copyright__logo" alt="The Next Web"
+            src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" />
+        </a>
+        © 2006–2020 The Next Web B.V.
+      </span>
+      <span class="copyright__line">Made with <b>♥</b> in Amsterdam.</span>
+      <span class="copyright__line">
+        Powered by
+        <a href="#">
+          <img class="copyright__logo--2" alt="StackPath"
+            src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg" />
+        </a>
+      </span>
+    </div>
+  </footer>
+</body>
 
-        <!-- Start The slider Block -->
-        <article class="slider">
-          <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
-          <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
-          <div class="slider__img">
-            <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
-            <header class="slider__header">
-              <h2>
-                <a class="slider__heading" href="#"
-                  >5 reasons why Germany is the best country for startups</a
-                >
-              </h2>
-              <ul class="slider__list">
-                <li class="slider__item">
-                  by <a class="slider__item-link" href="#">Callum Booth</a>
-                </li>
-                <li class="slider__item">
-                  <i class="slider__icon far fa-clock"></i
-                  ><span class="timeago"> 1 hour ago</span>
-                </li>
-                <li class="slider__item">
-                  <i class="slider__icon fas fa-share-alt"></i> 3
-                </li>
-              </ul>
-            </header>
-          </div>
-        </article>
-        <!-- End The slider Block -->
-
-        <!-- Start The slider Block -->
-        <article class="slider">
-          <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
-          <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
-          <div class="slider__img">
-            <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
-            <header class="slider__header">
-              <h2>
-                <a class="slider__heading" href="#"
-                  >5 reasons why Germany is the best country for startups</a
-                >
-              </h2>
-              <ul class="slider__list">
-                <li class="slider__item">
-                  by <a class="slider__item-link" href="#">Callum Booth</a>
-                </li>
-                <li class="slider__item">
-                  <i class="slider__icon far fa-clock"></i
-                  ><span class="timeago"> 1 hour ago</span>
-                </li>
-                <li class="slider__item">
-                  <i class="slider__icon fas fa-share-alt"></i> 3
-                </li>
-              </ul>
-            </header>
-          </div>
-        </article>
-        <!-- End The slider Block -->
-      </div>
-
-      <div class="sheet">
-        <div class="wrapper">
-          <!-- Latest News Section -->
-          <section class="latest s-m-b">
-            <!-- Latest News Heading -->
-            <h2 class="latest__heading--main second-heading">Latest news</h2>
-            <ul class="row">
-              <!-- Start Latest News Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item"><a href="#">Ivan</a></li>
-                    <li class="latest__item">
-                      <!-- !! -->
-                      <time
-                        datetime="2020-07-08T17:29:19+00:00"
-                        data-full-date="Julc8, 2020 - 19:29"
-                      >
-                        1 hour ago
-                      </time>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest News Artile Block -->
-
-              <!-- Start Latest News Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item"><a href="#">Ivan</a></li>
-                    <li class="latest__item">
-                      <!-- !! -->
-                      <time
-                        datetime="2020-07-08T17:29:19+00:00"
-                        data-full-date="Julc8, 2020 - 19:29"
-                      >
-                        1 hour ago
-                      </time>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest News Artile Block -->
-
-              <!-- Start Latest News Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item"><a href="#">Ivan</a></li>
-                    <li class="latest__item">
-                      <!-- !! -->
-                      <time
-                        datetime="2020-07-08T17:29:19+00:00"
-                        data-full-date="Julc8, 2020 - 19:29"
-                      >
-                        1 hour ago
-                      </time>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest News Artile Block -->
-
-              <!-- Start Latest News Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item"><a href="#">Ivan</a></li>
-                    <li class="latest__item">
-                      <!-- !! -->
-                      <time
-                        datetime="2020-07-08T17:29:19+00:00"
-                        data-full-date="Julc8, 2020 - 19:29"
-                      >
-                        1 hour ago
-                      </time>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest News Artile Block -->
-
-              <!-- Start Latest News Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item"><a href="#">Ivan</a></li>
-                    <li class="latest__item">
-                      <!-- !! -->
-                      <time
-                        datetime="2020-07-08T17:29:19+00:00"
-                        data-full-date="Julc8, 2020 - 19:29"
-                      >
-                        1 hour ago
-                      </time>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest News Artile Block -->
-
-              <!-- Start Latest News Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item"><a href="#">Ivan</a></li>
-                    <li class="latest__item">
-                      <!-- !! -->
-                      <time
-                        datetime="2020-07-08T17:29:19+00:00"
-                        data-full-date="Julc8, 2020 - 19:29"
-                      >
-                        1 hour ago
-                      </time>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest News Artile Block -->
-
-              <!-- Start Latest News Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item"><a href="#">Ivan</a></li>
-                    <li class="latest__item">
-                      <!-- !! -->
-                      <time
-                        datetime="2020-07-08T17:29:19+00:00"
-                        data-full-date="Julc8, 2020 - 19:29"
-                      >
-                        1 hour ago
-                      </time>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest News Artile Block -->
-
-              <!-- Start Latest News Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item"><a href="#">Ivan</a></li>
-                    <li class="latest__item">
-                      <!-- !! -->
-                      <time
-                        datetime="2020-07-08T17:29:19+00:00"
-                        data-full-date="Julc8, 2020 - 19:29"
-                      >
-                        1 hour ago
-                      </time>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest News Artile Block -->
-            </ul>
-          </section>
-          <!-- End The Latest News Section -->
-
-          <!-- Start The Funding Section -->
-          <section class="funding s-m-b">
-            <!-- Funding Section Header -->
-            <header>
-              <h2 class="funding__heading--main second-heading">
-                Latest funding rounds on Index.co
-              </h2>
-              <ul>
-                <li><a href="#">See more</a></li>
-                <li><a href="#">Get update by mail</a></li>
-                <li><a href="#">Add info</a></li>
-              </ul>
-            </header>
-
-            <ul class="row">
-              <!-- Start Funding Block -->
-              <li class="funding col-m--3">
-                <!-- The funding block header of the section -->
-                <a href="#" class="funding__header">
-                  <img
-                    class="funding__img"
-                    src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1280551752593338368%2FAf17dIYK.jpg&signature=d7c37d4f7cda5a5296512fa28f5d94f7"
-                    alt="company logo"
-                  />
-                  <h4 class="funding__heading forth-heading">Truepill</h4>
-                  <div class="funding__price-box">
-                    <h4>$25M</h4>
-                    <h5 class="fifth-heading">Series B</h5>
-                  </div>
-                </a>
-                <!-- The funding block Tag -->
-                <div class="funding__tag-box">
-                  <a href="#" class="funding__tag">
-                    <i class="funding__icon fas fa-tag"></i>
-                    <span>Health Care</span>
-                  </a>
-                </div>
-                <!-- The funding block Bio -->
-                <div class="funding__tag-box">
-                  <a class="funding__bio" href="#">
-                    RacketPal raises £150k in pre-seed round
-                    <span>on&nbsp;UKTN (UK Tech News)</span>
-                  </a>
-                </div>
-              </li>
-              <!-- End Funding Block -->
-
-              <!-- Start Funding Block -->
-              <li class="funding col-m--3">
-                <!-- The funding block header of the section -->
-                <a href="#" class="funding__header">
-                  <img
-                    class="funding__img"
-                    src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1280551752593338368%2FAf17dIYK.jpg&signature=d7c37d4f7cda5a5296512fa28f5d94f7"
-                    alt="company logo"
-                  />
-                  <h4 class="funding__heading forth-heading">Truepill</h4>
-                  <div class="funding__price-box">
-                    <h4>$25M</h4>
-                    <h5 class="fifth-heading">Series B</h5>
-                  </div>
-                </a>
-                <!-- The funding block Tag -->
-                <div class="funding__tag-box">
-                  <a href="#" class="funding__tag">
-                    <i class="funding__icon fas fa-tag"></i>
-                    <span>Health Care</span>
-                  </a>
-                </div>
-                <!-- The funding block Bio -->
-                <div class="funding__tag-box">
-                  <a class="funding__bio" href="#">
-                    RacketPal raises £150k in pre-seed round
-                    <span>on&nbsp;UKTN (UK Tech News)</span>
-                  </a>
-                </div>
-              </li>
-              <!-- End Funding Block -->
-
-              <!-- Start Funding Block -->
-              <li class="funding col-m--3">
-                <!-- The funding block header of the section -->
-                <a href="#" class="funding__header">
-                  <img
-                    class="funding__img"
-                    src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1280551752593338368%2FAf17dIYK.jpg&signature=d7c37d4f7cda5a5296512fa28f5d94f7"
-                    alt="company logo"
-                  />
-                  <h4 class="funding__heading forth-heading">Truepill</h4>
-                  <div class="funding__price-box">
-                    <h4>$25M</h4>
-                    <h5 class="fifth-heading">Series B</h5>
-                  </div>
-                </a>
-                <!-- The funding block Tag -->
-                <div class="funding__tag-box">
-                  <a href="#" class="funding__tag">
-                    <i class="funding__icon fas fa-tag"></i>
-                    <span>Health Care</span>
-                  </a>
-                </div>
-                <!-- The funding block Bio -->
-                <div class="funding__tag-box">
-                  <a class="funding__bio" href="#">
-                    RacketPal raises £150k in pre-seed round
-                    <span>on&nbsp;UKTN (UK Tech News)</span>
-                  </a>
-                </div>
-              </li>
-              <!-- End Funding Block -->
-            </ul>
-          </section>
-          <!-- End The funding Section -->
-
-          <div class="topic-section s-m-b row">
-            <!-- Start The topic Section -->
-            <section class="topic col-m--2">
-              <!-- Topic Heading -->
-              <h2 class="topic__heading--main second-heading topic-m-b">
-                <a href="#">Hard Fork</a>
-              </h2>
-              <ul class="topic__list">
-                <li class="topic__item">
-                  <article class="topic__article--frist">
-                    <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
-                    <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
-                    <div class="topic__img">
-                      <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
-
-                      <header class="topic__header">
-                        <h5 class="topic__tag fifth-heading">Most popular</h5>
-                        <h3 class="topic__heading third-heading">
-                          <a href="#">
-                            Satoshi Nakaboto: ‘Leaked data shows how the FBI
-                            uncovers Bitcoin laundering’
-                          </a>
-                        </h3>
-                        <ul class="topic__list latest__list">
-                          <li class="topic__item latest__item">
-                            <a href="#">Ivan</a>
-                          </li>
-                          <li class="topic__item latest__item">
-                            <!-- !! -->
-                            <time
-                              datetime="2020-07-08T17:29:19+00:00"
-                              data-full-date="Julc8, 2020 - 19:29"
-                            >
-                              1 hour ago
-                            </time>
-                          </li>
-                        </ul>
-                      </header>
-                    </div>
-                  </article>
-                </li>
-                <li>
-                  <article class="topic__article--second">
-                    <header>
-                      <h5>Latest</h5>
-                      <h4>
-                        <a href="#">Digital media giant J2 Global 'targeted'</a>
-                      </h4>
-                    </header>
-                    <a class="topic__article--second__img" href="#"></a>
-                  </article>
-                </li>
-
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-              </ul>
-            </section>
-            <!-- End The topic Section -->
-
-            <!-- Start The topic Section -->
-            <section class="topic col-m--2">
-              <!-- Topic Heading -->
-              <h2 class="topic__heading--main second-heading topic-m-b">
-                <a href="#">Hard Fork</a>
-              </h2>
-              <ul class="topic__list">
-                <li class="topic__item">
-                  <article class="topic__article--frist">
-                    <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
-                    <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
-                    <div class="topic__img">
-                      <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
-
-                      <header class="topic__header">
-                        <h5 class="topic__tag fifth-heading">Most popular</h5>
-                        <h3 class="topic__heading third-heading">
-                          <a href="#">
-                            Satoshi Nakaboto: ‘Leaked data shows how the FBI
-                            uncovers Bitcoin laundering’
-                          </a>
-                        </h3>
-                        <ul class="topic__list latest__list">
-                          <li class="topic__item latest__item">
-                            <a href="#">Ivan</a>
-                          </li>
-                          <li class="topic__item latest__item">
-                            <!-- !! -->
-                            <time
-                              datetime="2020-07-08T17:29:19+00:00"
-                              data-full-date="Julc8, 2020 - 19:29"
-                            >
-                              1 hour ago
-                            </time>
-                          </li>
-                        </ul>
-                      </header>
-                    </div>
-                  </article>
-                </li>
-                <li>
-                  <article class="topic__article--second">
-                    <header>
-                      <h5>Latest</h5>
-                      <h4>
-                        <a href="#">Digital media giant J2 Global 'targeted'</a>
-                      </h4>
-                    </header>
-                    <a class="topic__article--second__img" href="#"></a>
-                  </article>
-                </li>
-
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-              </ul>
-            </section>
-            <!-- End The topic Section -->
-
-            <!-- Start The topic Section -->
-            <section class="topic col-m--2">
-              <!-- Topic Heading -->
-              <h2 class="topic__heading--main second-heading topic-m-b">
-                <a href="#">Hard Fork</a>
-              </h2>
-              <ul class="topic__list">
-                <li class="topic__item">
-                  <article class="topic__article--frist">
-                    <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
-                    <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
-                    <div class="topic__img">
-                      <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
-
-                      <header class="topic__header">
-                        <h5 class="topic__tag fifth-heading">Most popular</h5>
-                        <h3 class="topic__heading third-heading">
-                          <a href="#">
-                            Satoshi Nakaboto: ‘Leaked data shows how the FBI
-                            uncovers Bitcoin laundering’
-                          </a>
-                        </h3>
-                        <ul class="topic__list latest__list">
-                          <li class="topic__item latest__item">
-                            <a href="#">Ivan</a>
-                          </li>
-                          <li class="topic__item latest__item">
-                            <!-- !! -->
-                            <time
-                              datetime="2020-07-08T17:29:19+00:00"
-                              data-full-date="Julc8, 2020 - 19:29"
-                            >
-                              1 hour ago
-                            </time>
-                          </li>
-                        </ul>
-                      </header>
-                    </div>
-                  </article>
-                </li>
-                <li>
-                  <article class="topic__article--second">
-                    <header>
-                      <h5>Latest</h5>
-                      <h4>
-                        <a href="#">Digital media giant J2 Global 'targeted'</a>
-                      </h4>
-                    </header>
-                    <a class="topic__article--second__img" href="#"></a>
-                  </article>
-                </li>
-
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-              </ul>
-            </section>
-            <!-- End The topic Section -->
-
-            <!-- Start The topic Section -->
-            <section class="topic col-m--2">
-              <!-- Topic Heading -->
-              <h2 class="topic__heading--main second-heading topic-m-b">
-                <a href="#">Hard Fork</a>
-              </h2>
-              <ul class="topic__list">
-                <li class="topic__item">
-                  <article class="topic__article--frist">
-                    <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
-                    <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
-                    <div class="topic__img">
-                      <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
-
-                      <header class="topic__header">
-                        <h5 class="topic__tag fifth-heading">Most popular</h5>
-                        <h3 class="topic__heading third-heading">
-                          <a href="#">
-                            Satoshi Nakaboto: ‘Leaked data shows how the FBI
-                            uncovers Bitcoin laundering’
-                          </a>
-                        </h3>
-                        <ul class="topic__list latest__list">
-                          <li class="topic__item latest__item">
-                            <a href="#">Ivan</a>
-                          </li>
-                          <li class="topic__item latest__item">
-                            <!-- !! -->
-                            <time
-                              datetime="2020-07-08T17:29:19+00:00"
-                              data-full-date="Julc8, 2020 - 19:29"
-                            >
-                              1 hour ago
-                            </time>
-                          </li>
-                        </ul>
-                      </header>
-                    </div>
-                  </article>
-                </li>
-                <li>
-                  <article class="topic__article--second">
-                    <header>
-                      <h5>Latest</h5>
-                      <h4>
-                        <a href="#">Digital media giant J2 Global 'targeted'</a>
-                      </h4>
-                    </header>
-                    <a class="topic__article--second__img" href="#"></a>
-                  </article>
-                </li>
-
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-              </ul>
-            </section>
-            <!-- End The topic Section -->
-
-            <!-- Start The topic Section -->
-            <section class="topic col-m--2">
-              <!-- Topic Heading -->
-              <h2 class="topic__heading--main second-heading topic-m-b">
-                <a href="#">Hard Fork</a>
-              </h2>
-              <ul class="topic__list">
-                <li class="topic__item">
-                  <article class="topic__article--frist">
-                    <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
-                    <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
-                    <div class="topic__img">
-                      <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
-
-                      <header class="topic__header">
-                        <h5 class="topic__tag fifth-heading">Most popular</h5>
-                        <h3 class="topic__heading third-heading">
-                          <a href="#">
-                            Satoshi Nakaboto: ‘Leaked data shows how the FBI
-                            uncovers Bitcoin laundering’
-                          </a>
-                        </h3>
-                        <ul class="topic__list latest__list">
-                          <li class="topic__item latest__item">
-                            <a href="#">Ivan</a>
-                          </li>
-                          <li class="topic__item latest__item">
-                            <!-- !! -->
-                            <time
-                              datetime="2020-07-08T17:29:19+00:00"
-                              data-full-date="Julc8, 2020 - 19:29"
-                            >
-                              1 hour ago
-                            </time>
-                          </li>
-                        </ul>
-                      </header>
-                    </div>
-                  </article>
-                </li>
-                <li>
-                  <article class="topic__article--second">
-                    <header>
-                      <h5>Latest</h5>
-                      <h4>
-                        <a href="#">Digital media giant J2 Global 'targeted'</a>
-                      </h4>
-                    </header>
-                    <a class="topic__article--second__img" href="#"></a>
-                  </article>
-                </li>
-
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-              </ul>
-            </section>
-            <!-- End The topic Section -->
-
-            <!-- Start The topic Section -->
-            <section class="topic col-m--2">
-              <!-- Topic Heading -->
-              <h2 class="topic__heading--main second-heading topic-m-b">
-                <a href="#">Hard Fork</a>
-              </h2>
-              <ul class="topic__list">
-                <li class="topic__item">
-                  <article class="topic__article--frist">
-                    <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
-                    <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
-                    <div class="topic__img">
-                      <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
-
-                      <header class="topic__header">
-                        <h5 class="topic__tag fifth-heading">Most popular</h5>
-                        <h3 class="topic__heading third-heading">
-                          <a href="#">
-                            Satoshi Nakaboto: ‘Leaked data shows how the FBI
-                            uncovers Bitcoin laundering’
-                          </a>
-                        </h3>
-                        <ul class="topic__list latest__list">
-                          <li class="topic__item latest__item">
-                            <a href="#">Ivan</a>
-                          </li>
-                          <li class="topic__item latest__item">
-                            <!-- !! -->
-                            <time
-                              datetime="2020-07-08T17:29:19+00:00"
-                              data-full-date="Julc8, 2020 - 19:29"
-                            >
-                              1 hour ago
-                            </time>
-                          </li>
-                        </ul>
-                      </header>
-                    </div>
-                  </article>
-                </li>
-                <li>
-                  <article class="topic__article--second">
-                    <header>
-                      <h5>Latest</h5>
-                      <h4>
-                        <a href="#">Digital media giant J2 Global 'targeted'</a>
-                      </h4>
-                    </header>
-                    <a class="topic__article--second__img" href="#"></a>
-                  </article>
-                </li>
-
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-              </ul>
-            </section>
-            <!-- End The topic Section -->
-
-            <!-- Start The topic Section -->
-            <section class="topic col-m--2">
-              <!-- Topic Heading -->
-              <h2 class="topic__heading--main second-heading topic-m-b">
-                <a href="#">Hard Fork</a>
-              </h2>
-              <ul class="topic__list">
-                <li class="topic__item">
-                  <article class="topic__article--frist">
-                    <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
-                    <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
-                    <div class="topic__img">
-                      <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
-
-                      <header class="topic__header">
-                        <h5 class="topic__tag fifth-heading">Most popular</h5>
-                        <h3 class="topic__heading third-heading">
-                          <a href="#">
-                            Satoshi Nakaboto: ‘Leaked data shows how the FBI
-                            uncovers Bitcoin laundering’
-                          </a>
-                        </h3>
-                        <ul class="topic__list latest__list">
-                          <li class="topic__item latest__item">
-                            <a href="#">Ivan</a>
-                          </li>
-                          <li class="topic__item latest__item">
-                            <!-- !! -->
-                            <time
-                              datetime="2020-07-08T17:29:19+00:00"
-                              data-full-date="Julc8, 2020 - 19:29"
-                            >
-                              1 hour ago
-                            </time>
-                          </li>
-                        </ul>
-                      </header>
-                    </div>
-                  </article>
-                </li>
-                <li>
-                  <article class="topic__article--second">
-                    <header>
-                      <h5>Latest</h5>
-                      <h4>
-                        <a href="#">Digital media giant J2 Global 'targeted'</a>
-                      </h4>
-                    </header>
-                    <a class="topic__article--second__img" href="#"></a>
-                  </article>
-                </li>
-
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-              </ul>
-            </section>
-            <!-- End The topic Section -->
-
-            <!-- Start The topic Section -->
-            <section class="topic col-m--2">
-              <!-- Topic Heading -->
-              <h2 class="topic__heading--main second-heading topic-m-b">
-                <a href="#">Hard Fork</a>
-              </h2>
-              <ul class="topic__list">
-                <li class="topic__item">
-                  <article class="topic__article--frist">
-                    <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
-                    <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
-                    <div class="topic__img">
-                      <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
-
-                      <header class="topic__header">
-                        <h5 class="topic__tag fifth-heading">Most popular</h5>
-                        <h3 class="topic__heading third-heading">
-                          <a href="#">
-                            Satoshi Nakaboto: ‘Leaked data shows how the FBI
-                            uncovers Bitcoin laundering’
-                          </a>
-                        </h3>
-                        <ul class="topic__list latest__list">
-                          <li class="topic__item latest__item">
-                            <a href="#">Ivan</a>
-                          </li>
-                          <li class="topic__item latest__item">
-                            <!-- !! -->
-                            <time
-                              datetime="2020-07-08T17:29:19+00:00"
-                              data-full-date="Julc8, 2020 - 19:29"
-                            >
-                              1 hour ago
-                            </time>
-                          </li>
-                        </ul>
-                      </header>
-                    </div>
-                  </article>
-                </li>
-                <li>
-                  <article class="topic__article--second">
-                    <header>
-                      <h5>Latest</h5>
-                      <h4>
-                        <a href="#">Digital media giant J2 Global 'targeted'</a>
-                      </h4>
-                    </header>
-                    <a class="topic__article--second__img" href="#"></a>
-                  </article>
-                </li>
-
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-              </ul>
-            </section>
-            <!-- End The topic Section -->
-
-            <!-- Start The topic Section -->
-            <section class="topic col-m--2">
-              <!-- Topic Heading -->
-              <h2 class="topic__heading--main second-heading topic-m-b">
-                <a href="#">Hard Fork</a>
-              </h2>
-              <ul class="topic__list">
-                <li class="topic__item">
-                  <article class="topic__article--frist">
-                    <!-- Decide To Use div Rather Than img Tag Cus It Is Bes Practis To Use Image As Back Ground In Css If IT Just for Styling -->
-                    <!-- HTML Just For Semantic Elements That Help Searching Engine Understand your Website -->
-                    <div class="topic__img">
-                      <!-- [1]why on The real Site they didn't put the other tags inside the div rather than that they but them under it -->
-
-                      <header class="topic__header">
-                        <h5 class="topic__tag fifth-heading">Most popular</h5>
-                        <h3 class="topic__heading third-heading">
-                          <a href="#">
-                            Satoshi Nakaboto: ‘Leaked data shows how the FBI
-                            uncovers Bitcoin laundering’
-                          </a>
-                        </h3>
-                        <ul class="topic__list latest__list">
-                          <li class="topic__item latest__item">
-                            <a href="#">Ivan</a>
-                          </li>
-                          <li class="topic__item latest__item">
-                            <!-- !! -->
-                            <time
-                              datetime="2020-07-08T17:29:19+00:00"
-                              data-full-date="Julc8, 2020 - 19:29"
-                            >
-                              1 hour ago
-                            </time>
-                          </li>
-                        </ul>
-                      </header>
-                    </div>
-                  </article>
-                </li>
-                <li>
-                  <article class="topic__article--second">
-                    <header>
-                      <h5>Latest</h5>
-                      <h4>
-                        <a href="#">Digital media giant J2 Global 'targeted'</a>
-                      </h4>
-                    </header>
-                    <a class="topic__article--second__img" href="#"></a>
-                  </article>
-                </li>
-
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-                <li class="topic__item--linear">
-                  <h4 class="topic__item--linear__heading">
-                    <a href="#">
-                      Satoshi Nakaboto: ‘New app lets you send and receive
-                      Bitcoin directly from and to your bank account’
-                    </a>
-                  </h4>
-                </li>
-              </ul>
-            </section>
-            <!-- End The topic Section -->
-          </div>
-
-          <!-- Start of Latest Deal Section -->
-          <section class="latest Deal s-m-b">
-            <!-- Latest Deal Heading -->
-            <h2 class="latest__heading--main second-heading">Latest deals</h2>
-            <ul class="row">
-              <!-- Start Latest Deal Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item deal__iteam">
-                      <span class="deal__original">$49.99</span>
-                    </li>
-                    <li class="latest__item deal__iteam"><span>$0</span></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest Deal Artile Block -->
-
-              <!-- Start Latest Deal Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item deal__iteam">
-                      <span class="deal__original">$49.99</span>
-                    </li>
-                    <li class="latest__item deal__iteam"><span>$0</span></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest Deal Artile Block -->
-
-              <!-- Start Latest Deal Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item deal__iteam">
-                      <span class="deal__original">$49.99</span>
-                    </li>
-                    <li class="latest__item deal__iteam"><span>$0</span></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest Deal Artile Block -->
-
-              <!-- Start Latest Deal Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item deal__iteam">
-                      <span class="deal__original">$49.99</span>
-                    </li>
-                    <li class="latest__item deal__iteam"><span>$0</span></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest Deal Artile Block -->
-
-              <!-- Start Latest Deal Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item deal__iteam">
-                      <span class="deal__original">$49.99</span>
-                    </li>
-                    <li class="latest__item deal__iteam"><span>$0</span></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest Deal Artile Block -->
-
-              <!-- Start Latest Deal Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item deal__iteam">
-                      <span class="deal__original">$49.99</span>
-                    </li>
-                    <li class="latest__item deal__iteam"><span>$0</span></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest Deal Artile Block -->
-
-              <!-- Start Latest Deal Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item deal__iteam">
-                      <span class="deal__original">$49.99</span>
-                    </li>
-                    <li class="latest__item deal__iteam"><span>$0</span></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest Deal Artile Block -->
-
-              <!-- Start Latest Deal Artile Block -->
-              <li class="col-m latest__li">
-                <a href="#" class="latest__img"></a>
-                <div class="latest__box">
-                  <h4 class="latest__heading--second forth-heading">
-                    <a href="#">
-                      Instagram now lets you pin 3 comments on your posts -
-                      here's how
-                    </a>
-                  </h4>
-                  <ul class="latest__list">
-                    <li class="latest__item deal__iteam">
-                      <span class="deal__original">$49.99</span>
-                    </li>
-                    <li class="latest__item deal__iteam"><span>$0</span></li>
-                  </ul>
-                </div>
-              </li>
-              <!-- End Latest Deal Artile Block -->
-            </ul>
-          </section>
-        </div>
-      </div>
-    </main>
-
-    <!-- Start Footer -->
-    <footer class="footer">
-      <div class="link-box">
-        <!-- This Wrapper Act Like A Container With Padding For All Its Contents-->
-        <div class="wrapper">
-          <!-- Start The List Of Icons -->
-          <ul class="link__list link__list--1">
-            <li class="link__item--1">
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-            </li>
-            <li class="link__item--1">
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="link__item--1">
-              <a href="#"><i class="fab fa-youtube"></i></a>
-            </li>
-            <li class="link__item--1">
-              <a href="#"><i class="fab fa-instagram-square"></i></a>
-            </li>
-            <li class="link__item--1">
-              <a href="#"><i class="fab fa-pinterest-p"></i></a>
-            </li>
-            <li class="link__item--1">
-              <a href="#"><i class="fas fa-rss"></i></a>
-            </li>
-            <li class="link__item--1">
-              <a href="#"><i class="fas fa-envelope"></i></a>
-            </li>
-          </ul>
-          <!-- End The List Of Icons -->
-          <!-- Start The List Of Links -->
-          <ul class="link__list link__list--2">
-            <li class="link__item--2">Events</li>
-            <li class="link__item--2">About</li>
-            <li class="link__item--2">Advertise</li>
-            <li class="link__item--2">Jobs</li>
-            <li class="link__item--2">Contact</li>
-          </ul>
-          <!-- End The List Of Links -->
-        </div>
-      </div>
-
-      <div class="copyright">
-        <span class="copyright__line">
-          <a href="#">
-            <img
-              class="copyright__logo"
-              alt="The Next Web"
-              src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"
-            />
-          </a>
-          © 2006–2020 The Next Web B.V.
-        </span>
-        <span class="copyright__line">Made with <b>♥</b> in Amsterdam.</span>
-        <span class="copyright__line">
-          Powered by
-          <a href="#">
-            <img
-              class="copyright__logo--2"
-              alt="StackPath"
-              src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg"
-            />
-          </a>
-        </span>
-      </div>
-    </footer>
-  </body>
 </html>
