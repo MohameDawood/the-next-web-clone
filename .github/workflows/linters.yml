@@ -41,8 +41,6 @@ jobs:
         with:
           node-version: "12.x"
       - name: Setup Stylelint
-        run: |
-          npm install --save-dev hint@6.0.x
-          [ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.hintrc
-      - name: Webhint Report
-        run: npx hint --telemetry=off .
+        run: npm install -g @lhci/cli@0.4.x
+      - name: Lighthouse Report
+        run: lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=.
