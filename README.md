@@ -15,7 +15,7 @@ This project consists of building an HTML document that matches the appearance o
 
 ## Live Demo
 
-[Live Demo Link]https://rawcdn.githack.com/MohameDawood/the-next-web-clone/3d107e8b88aea6abf23959ff01b229ad1d5c5d16/index.html)
+[Live Demo Link](https://rawcdn.githack.com/MohameDawood/the-next-web-clone/3d107e8b88aea6abf23959ff01b229ad1d5c5d16/index.html)
 
 ## Authors
 
